@@ -1,7 +1,7 @@
 Naming conventions
 ==================
 
-*Scroll down for complete example.*
+*Scroll down for complete examples.*
 
 ## Namespaces
 - Namespaces MUST make use of curly braces.
@@ -164,7 +164,7 @@ class User {
 
 namespace packages\John_Doe\account {
     
-    class Example {
+    class ExampleChild extends ExampleParent implements ExampleInterface, Example2Interface {
         
         public $exampleProperty = '';
         public $exampleProperty2 = 0;
