@@ -4,24 +4,24 @@ Naming conventions
 ## Namespaces
 - Namespaces MUST make use of curly braces.
 - Namespaces MUST use underscores where a space is expected.
+- Namespaces MUST be lowercase unless it's a name, a country, a language, etc.
 - Do not make a namespace to store exceptions.
 
 Every class, including abstract classes and interfaces MUST be inside a namespace.
-Namespaces MUST be lowercase unless it's a name, a country, a language, etc.
 
 If you are writing a package of Tres Framework, you MUST start with "packages"
-following with a vendor name, like "pedzed" or "Google".
+following with a vendor name, like "John_Doe" or "Google".
 
 The namespace path MUST match with the directory path. So let's take ExampleClass
-as example. ExampleClass uses the "packages\pedzed\example_project" namespace.
-In this case, the file should be packages/pedzed/example_project/ExampleClass.php
+as example. ExampleClass uses the "packages\John_Doe\example_project" namespace.
+In this case, the file should be packages/John_Doe/example_project/ExampleClass.php
 
 ```php
 <?php
 
 // Wrong
 namespace packages\vendorName\packageName;
-namespace packages\pedzed\db_search;
+namespace packages\John_Doe\db_search;
 
 // Correct
 namespace packages\vendor_name\package_name {
@@ -30,7 +30,7 @@ namespace packages\vendor_name\package_name {
     
 }
 
-namespace packages\pedzed\db_search {
+namespace packages\John_Doe\db_search {
     
     //
     
@@ -49,6 +49,7 @@ namespace packages\pedzed\db_search {
 Numbers are permitted, but are discouraged in most cases.
 
 ```php
+<?php
 
 // Wrong
 class user_model {
