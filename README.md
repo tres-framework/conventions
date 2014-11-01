@@ -1,7 +1,11 @@
 Tres conventions
 ================
 
-When contributing to Tres, you must follow the conventions.
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be 
+interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119).
+
+When contributing to Tres, you MUST follow these conventions.
 
 Well documented and followed conventions results in readable and unambiguous 
 source code. That is exactly what we are trying to achieve.
