@@ -1,6 +1,8 @@
 Naming conventions
 ==================
 
+*Scroll down for complete example.*
+
 ## Namespaces
 - Namespaces MUST make use of curly braces.
 - Namespaces MUST use underscores where a space is expected.
@@ -86,10 +88,10 @@ abstract classes SHOULD start with "Abstract" in their name.
 Interfaces follow the same convention as classes with one additional rule:
 interfaces MUST end with "Interface" in their name.
 
-# Filenames
+## Filenames
 Any file containing PHP code MUST end with .php.
 
-# Functions and methods
+## Functions and methods
 - Function/method names MUST be written in camelCase.
 - Abbreviations MUST be written in FULLCAPS.
 - Function/method names MUST NOT contain underscores.
@@ -151,6 +153,45 @@ class User {
 
 ```
 
-# Constants
+## Constants
 - Constants MUST contain alphanumeric characters and underscores.
 - Constants MUST use underscores where a space is expected.
+
+## Examples
+
+```php
+<?php
+
+namespace packages\John_Doe\account {
+    
+    class Example {
+        
+        public $exampleProperty = '';
+        public $exampleProperty2 = 0;
+        
+        protected $_exampleProperty3 = [];
+        
+        private $_exampleProperty4 = '';
+        
+        const EXAMPLE_CONSTANT = 'value';
+        
+        public function __construct($exampleParam){
+            $this->_exampleProperty3 = $exampleParam;
+        }
+        
+        public function exampleMethod(){
+            $data  = $this->_exampleMethod2();
+            $data .= $this->_exampleProperty4;
+            
+            return $data;
+        }
+        
+        protected function _exampleMethod2(){
+            return $this->_exampleProperty3;
+        }
+        
+    }
+    
+}
+
+```
