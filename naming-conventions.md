@@ -8,31 +8,27 @@ Naming conventions
 - Namespaces MUST use underscores where a space is expected.
 - Namespaces MUST be lowercase unless it's a name, a country, a language, etc.
 - Do not make a namespace to store exceptions.
-
-Every class, including abstract classes and interfaces MUST be inside a namespace.
-
-If you are writing a package of Tres Framework, you MUST start with "packages"
-following with a vendor name, like "John_Doe" or "Google".
+- Every class, including abstract classes and interfaces MUST be inside a namespace.
 
 The namespace path MUST match with the directory path. So let's take ExampleClass
-as example. ExampleClass uses the "packages\John_Doe\example_project" namespace.
-In this case, the file should be packages/John_Doe/example_project/ExampleClass.php
+as example. ExampleClass uses the "John_Doe\example_project" namespace.
+In this case, the file should be John_Doe/example_project/ExampleClass.php
 
 ```php
 <?php
 
 // Wrong
-namespace packages\vendorName\packageName;
-namespace packages\John_Doe\db_search;
+namespace vendorName\packageName;
+namespace John_Doe\db_search;
 
 // Correct
-namespace packages\vendor_name\package_name {
+namespace vendor_name\package_name {
     
     //
     
 }
 
-namespace packages\John_Doe\db_search {
+namespace John_Doe\db_search {
     
     //
     
@@ -162,7 +158,7 @@ class User {
 ```php
 <?php
 
-namespace packages\John_Doe\account {
+namespace John_Doe\account {
     
     class ExampleChild extends ExampleParent implements ExampleInterface, Example2Interface {
         
