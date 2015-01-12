@@ -5,7 +5,7 @@ DocBlocks are an efficient way of explain a section of code. DockBlocks helps to
 
 Skip to a section
 * [Classes](#classes)
-* [Functions/Methods](#functions-methods)
+* [Functions/Methods](#functionsmethods)
 
 ## Classes
 Tres Framework **highly** discourages the use of DocBlocks for classes whenever possible, instead use [package.json](conventions/package.json.md). Using package.json allows interfacing with other Tres packages and better detail about the the packages limitations/requirements. If you need/wish to use a DocBlock follow the following format.
