@@ -3,7 +3,7 @@
 Commenting, not to be confused with [DocBlocks](docblock.md), are used to make notes inside a section of code.
 
 ## Standard comment
-Comments regardless of the length should use two forward slashes (`//`).
+Comments regardless of the length MUST use two forward slashes (`//`).
 ```php
 // This is a comment
 ```
@@ -14,13 +14,13 @@ Comments can be spaced onto multiple lines.
 // multiline comment
 ```
 
-Comments should not exceed the 80th column (80 character width)
+Comments SHOULD NOT exceed the 80th column (80 character width)
 ```php
 // This comment is so long that it will eventually reach the 80th column and will 
 // need to be broken down into two lines.
 ```
 
-The double asterisks (`/* */`) comment blocks signify a DocBlock, they should not be used.
+The double asterisks (`/* */`) comment blocks signify a DocBlock, they SHOULD NOT be used.
 ```php
 /*
 This is an inappropriate comment type for inline documentation, this is wrong!
