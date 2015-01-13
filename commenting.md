@@ -1,7 +1,6 @@
-Commenting Conventions
-======================
+# Commenting Conventions
 
-Commenting, not to be confused with [DockBlocks](docblock.md), are used to make notes inside a section of code.
+Commenting, not to be confused with [DocBlocks](docblock.md), are used to make notes inside a section of code.
 
 ## Standard comment
 Comments regardless of the length should use two forward slashes (`//`).
@@ -21,7 +20,7 @@ Comments should not exceed the 80th column (80 character width)
 // need to be broken down into two lines.
 ```
 
-The double asterisks (`/* */`) comment blocks signify a DockBlock, they should not be used.
+The double asterisks (`/* */`) comment blocks signify a DocBlock, they should not be used.
 ```php
 /*
 This is an inappropriate comment type for inline documentation, this is wrong!
@@ -29,9 +28,9 @@ This is an inappropriate comment type for inline documentation, this is wrong!
 ```
 
 ## NOTE Comment
-Note comments signify something more important then a normal comment.
+Note/notice comments signify something more important than a normal comment.
 ```php
-// NOTE: This is verry important
+// NOTE: This is very important
 ```
 
 ## TODO Comment
