@@ -14,7 +14,7 @@ Comments can be spaced onto multiple lines.
 // multi-line comment
 ```
 
-Comments SHOULD NOT exceed the 80th column (80 character width).
+Comments preferably don't exceed the 80-column length (80 characters). They MUST NOT exceed the 120th column, with the exception of long URI's.
 ```php
 // This comment is so long that it will eventually reach the 80th column and will 
 // need to be broken down into two lines.
